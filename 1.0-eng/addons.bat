@@ -18,8 +18,8 @@ cls
 echo ==================================================
 echo  CLI Addons Core: API ^| VER: %current_api_ver%
 echo ==================================================
-echo Reload the page
-echo Return to the menu
+echo [1] Reload the page
+echo [2] Return to the menu
 echo.
 echo --- Available Add-ons ---
 
