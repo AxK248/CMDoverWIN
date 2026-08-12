@@ -1,0 +1,1 @@
+Компьютер\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
