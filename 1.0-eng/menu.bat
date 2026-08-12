@@ -27,8 +27,8 @@ set /p password="Enter the code: "
 if /i "%password%"=="1" goto userprofile
 if /i "%password%"=="2" goto downloads
 if /i "%password%"=="3" goto desktop
-if /i "%password%"=="5" goto addons
-if /i "%password%"=="4" goto exit
+if /i "%password%"=="4" goto addons
+if /i "%password%"=="5" goto exit
 if /i "%password%"=="boot" goto boot
 if /i "%password%"=="script" goto script
 if /i "%password%"=="windows" goto windows
