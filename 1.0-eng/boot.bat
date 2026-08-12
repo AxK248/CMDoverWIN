@@ -8,10 +8,10 @@ chcp 65001 > nul
 title BIOS: ---------
 color f
 cls
-echo Запуск BIOS
+echo Start BIOS
 timeout /t 3 /nobreak >nul
 cls
-echo BIOS Запущен
+echo BIOS Started
 echo BIOS: boot-menu
 title BIOS: boot-menu
 timeout /t 1 /nobreak >nul
@@ -19,7 +19,7 @@ timeout /t 1 /nobreak >nul
 cls
 echo BOOT-MENU
 echo ========================================
-echo Выберите действие для BOOT:
+echo Select an action for BOOT:
 echo.
 echo [1] Load the desktop (KDE Plasma)
 echo [2] Load the terminal (CLI)
