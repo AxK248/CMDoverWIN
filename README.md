@@ -21,7 +21,7 @@ The system **intentionally does not use the `call` command** to launch add-ons. 
 ---
 
 ## Fun-fact
-The script was written by an enthusiast who hadn't even received his passport yet, so the code or batch file on his own understanding of CMD.
+The script was written by an enthusiast who hadn't even received his passport yet, so the code/batch-file on his own understanding of CMD.
 *The script will be further developed and updated.*
 
 ## 🔌 Instructions for Add-on Authors
