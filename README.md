@@ -1,5 +1,5 @@
 [Русская версия README](README_RU.md)
-# CMDoverWIN (API v1.1-beta.3) 
+# CMDoverWIN (API v1.1-beta.3)
 Reimagining Windows as a lightweight, extensible CLI system. No heavy graphical interfaces or hidden system changes—just a clean, full-screen terminal.
 
 The project is designed as an independent open-source framework. You can use the ready-made core, extend it with your own add-ons, or create unique forks.
