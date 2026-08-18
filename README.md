@@ -41,7 +41,7 @@ API: 1.0
 ```
 
 ### 2. Startup script (`init.bat`)
-Remember that the system executes `cd /d` directly into your addon's folder before starting. To return to the `addons.bat` menu, you **must manually** specify a relative path moving up two levels (or however deep your batch file containing the exit command is nested):
+Remember that the system executes `cd /d` directly into your addon's folder before starting. To return to the `addons.bat` menu, you can simply write nothing, and your add-on will return you to the `addon.bat` menu.:
 
 ```batch
 @echo off
