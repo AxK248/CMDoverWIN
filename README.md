@@ -37,7 +37,8 @@ Name: Name of your add-on
 Author: Your_nickname
 Version: 1.0
 Code: unique_activation_code
-API: 1.0
+API: 1.1-beta.3
+API_sup
 ```
 
 ### 2. Startup script (`init.bat`)
