@@ -23,7 +23,7 @@ For your add-on to work correctly and appear in the general list, it must be loc
 The folder must contain two files: `info.txt` and `init.bat`.
 
 ### 1. Add-on manifest (`info.txt`)
-The configuration file must strictly contain the following lines. **Important:** If your API version does not match the script version (currently `1.0`), the add-on manager will simply ignore your mod and hide it from the menu.
+The configuration file must strictly contain the following lines. **Important:** If your API version does not match the script version (currently `1.1-beta.3`), the add-on manager will simply ignore your mod and hide it from the menu.
 
 ```text
 Name: Name of your add-on
@@ -31,7 +31,7 @@ Author: Your_nickname
 Version: 1.0
 Code: unique_activation_code
 API: 1.1-beta.3
-API_sup
+API_sup: 1.1
 ```
 
 ### 2. Startup script (`init.bat`)
