@@ -13,13 +13,6 @@ The project is designed as an independent open-source framework. You can use the
 
 ---
 
-## 🛑 IMPORTANT WINDOW SAFETY RULE
-The system **intentionally does not use the `call` command** to launch add-ons. Control is passed directly to third-party code. 
-* If an add-on is poorly written, crashes, or executes a blind `exit` without returning control to the system, **the console window will close completely**.
-* In this case, you will have to open **Task Manager** and launch the Terminal (cmd). The kernel author has warned you!
-
----
-
 ## Fun-fact
 The script was written by an enthusiast who hadn't even received his passport yet, so the code/batch-file on his own understanding of CMD.
 *The script will be further developed and updated.*
