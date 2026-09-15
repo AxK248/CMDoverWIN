@@ -1,0 +1,58 @@
+[Русская версия README](README_RU.md)
+# CMDoverWIN (API v1.1-beta.3)
+Reimagining Windows as a lightweight, extensible CLI system. No heavy graphical interfaces or hidden system changes—just a clean, full-screen terminal.
+
+The project is designed as an independent open-source framework. You can use the ready-made core, extend it with your own add-ons, or create unique forks.
+
+---
+
+## 🛠️ How the system architecture is structured
+1. **`boot.bat`** — Primary bootloader. Sets up the environment and prepares the console.
+2. **`menu.bat`** — Main script help.
+3. **`addons.bat`** — Isolated add-on manager with strict API version control.
+
+---
+
+## Fun-fact
+The script was written by an enthusiast who hadn't even received his passport yet, so the code/batch-file on his own understanding of CMD.
+*The script will be further developed and updated.*
+
+## 🔌 Instructions for Add-on Authors
+For your add-on to work correctly and appear in the general list, it must be located in its own subfolder within the `addons/` directory (for example, `addons/my_utility/`).
+
+The folder must contain two files: `info.txt` and `init.bat`.
+
+### 1. Add-on manifest (`info.txt`)
+The configuration file must strictly contain the following lines. **Important:** If your API version does not match the script version (currently `1.1-beta.3`), the add-on manager will simply ignore your mod and hide it from the menu.
+
+```text
+Name: Name of your add-on
+Author: Your_nickname
+Version: 1.0
+Code: unique_activation_code
+API: 1.1-beta.3
+API_sup: 1.1
+```
+
+### 2. Startup script (`init.bat`)
+Remember that the system executes `cd /d` directly into your addon's folder before starting. To return to the `addons.bat` menu, you can simply write nothing, and your add-on will return you to the `addon.bat` menu.:
+
+```batch
+@echo off
+rem =======================================================
+rem Your add-on code goes here.
+rem =======================================================
+echo Hello, world! The add-on has been successfully launched via code.
+pause
+
+echo Return to the system...
+..\..\addons.bat
+```
+
+---
+
+## ⚙️ Installation recommendation
+For maximum convenience, it is recommended to add the project's root folder to the system `PATH` variable. This will allow you to instantly invoke `boot`, `menu`, or `addons` from absolutely any location or folder in Windows.
+
+## 📄 License
+This project is distributed under the **MIT** open-source license. You are free to modify the code, develop it further, test support, and release your own versions (PowerShell / reStructured).
